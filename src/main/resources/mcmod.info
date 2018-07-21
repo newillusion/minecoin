@@ -1,0 +1,10 @@
+[
+{
+  "modid": "minecoin",
+  "name": "MineCoin",
+  "description": "Mod for mining cryptocurrency in minecraft",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "authorList": ["AlienMonsterRUS"]
+}
+]

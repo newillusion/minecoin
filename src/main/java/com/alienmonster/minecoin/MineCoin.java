@@ -15,10 +15,24 @@ public class MineCoin {
 	@Mod.Instance("minecoin")
 	public static MineCoin INSTANCE;
 
+	enum StringResources {
+
+		ONE("one"),
+		TWO("two"),
+		THREE("three");
+
+		public String value;
+
+		StringResources(String value) {
+			this.value = value;
+		}
+	}
+
 	@SidedProxy(clientSide = "com.alienmonster.minecoin.proxy.ClientProxy", serverSide = "com.alienmonster.minecoin.proxy.ServerProxy")
 	public static ServerProxy proxy;
 
 	public MineCoin() {
+		System.out.println(StringResources.ONE.value);
 	}
 
 	@EventHandler
